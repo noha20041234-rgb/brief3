@@ -1,0 +1,89 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+
+/* Bandeau */
+.bandeau {
+    background-color: #770246;
+    width: 100%;
+    padding: 18px 16px;
+    text-align: center;
+}
+.bandeau p {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+
+/* Header */
+.site-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 6%;
+    background-color: #F5EEE8;
+
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #462f42;
+}
+
+.navigation {
+    display: grid;
+   grid-template-columns: repeat(4 , 1fr);
+    justify-content: end;
+    gap: 25px;
+    
+}
+
+.navigation a {
+    color: #3302288e;
+    text-decoration: none;
+}
+
+/* Contenu principal */
+.configurateur {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 30px;
+   
+}
+
+.preview,
+.options {
+    display: grid;
+    place-items: center;
+    min-height: 350px;
+    padding: 20px;
+}
+
+.preview {
+    background-color: #EFE5DC;
+}
+
+.options {
+    background-color: #F5EEE8;
+}
+
+/* Footer */
+.footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #E8DAD0;
+}
