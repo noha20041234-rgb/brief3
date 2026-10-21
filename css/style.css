@@ -711,7 +711,17 @@ footer {
 /* Footer */
 
 footer {
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 20px 4%;
+    border-top: 1px solid var(--color-border);
     background-color: var(--color-background);
+    color: var(--color-muted);
+    font-size: 11px;
+}
+
+footer span:last-child {
+    text-align: right;
 }
  
