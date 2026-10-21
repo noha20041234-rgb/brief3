@@ -496,3 +496,222 @@ footer {
 
 
 
+
+/* Page Récapitulatif */
+
+.recap-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1600px;
+    padding: 25px 4.5% 40px;
+}
+
+.recap-steps {
+    display: grid;
+    grid-template-columns: 120px 140px;
+    gap: 15px;
+    align-items: center;
+    color: var(--color-muted);
+    font-size: 11px;
+}
+
+.recap-intro {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.recap-intro .small-title {
+    color: var(--color-primary);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.recap-intro h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 38px;
+    font-weight: normal;
+    color: var(--color-logo);
+}
+
+/* Contenu principal */
+
+.recap-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 35px;
+}
+
+.recap-preview {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    min-width: 0;
+}
+
+.recap-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 14px;
+    background-color: var(--color-background);
+}
+
+.recap-image img {
+    display: block;
+    width: 100%;
+   
+}
+
+.recap-product-info {
+    display: grid;
+    grid-template-columns: 1fr 90px;
+    align-items: start;
+    gap: 15px;
+}
+
+.recap-product-info h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: var(--color-logo);
+}
+
+.recap-product-info p {
+    margin-top: 5px;
+    color: var(--color-muted);
+    font-size: 12px;
+}
+
+.recap-product-info a {
+    color: var(--color-primary);
+    text-align: right;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+/* Carte récapitulatif */
+
+.recap-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+    gap: 18px;
+    min-width: 0;
+    padding: 30px;
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+    background-color: var(--color-white);
+}
+
+.recap-badge {
+    width: fit-content;
+    padding: 7px 12px;
+    border-radius: 20px;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    font-size: 11px;
+}
+
+.recap-card h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: var(--color-logo);
+}
+
+.recap-subtitle {
+    margin-top: -10px;
+    color: var(--color-muted);
+    font-size: 13px;
+}
+
+/* Détails du produit */
+
+.recap-ligne {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 13px;
+}
+
+.recap-ligne span {
+    color: var(--color-muted);
+}
+
+.recap-ligne strong {
+    text-align: right;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+/* Prix total */
+
+.recap-total {
+    display: grid;
+    grid-template-columns: 1fr 140px;
+    align-items: center;
+    gap: 15px;
+    padding-top: 5px;
+}
+
+.recap-total strong:first-child {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.recap-total strong:last-child {
+    color: var(--color-primary);
+    text-align: right;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.recap-mention {
+    margin-top: -12px;
+    color: var(--color-muted);
+    font-size: 11px;
+}
+
+/* Bouton */
+
+.recap-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.recap-button:hover {
+    background-color: var(--color-logo);
+}
+
+/* Message de confirmation */
+
+.recap-note {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--color-background);
+    color: var(--color-muted);
+    font-size: 11px;
+
+}
+
+/* Footer */
+
+footer {
+    
+    background-color: var(--color-background);
+}
+ 
