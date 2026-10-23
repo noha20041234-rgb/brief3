@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <link rel="stylesheet" href="css/responsive.css">
+
     <title>NUANCE - Zoning</title>
 </head>
 <body>
@@ -32,7 +33,7 @@
                 <img src="assets/image/Aperçu produit en direct.png" alt="Une couleur. Votre caractère"  class="preview-image">
             </section>
 
-            <section class="options">
+            <form action="recapitulatif.html" class="options">
                 <div class="steps">
                     <div class="step-active">
                         <span class="step-number">01</span>
@@ -66,16 +67,15 @@
                     <div class="product-choix">
                         <label class="choix-card">
                             <input type="radio" name="produit" value="Fond de teint">
-                            <span class="choix-name">Fond de teint</span>
-                            <span class="choix-prix">160,00 DH</span>
+                            <span class="choix-name"></span>
+                            <span class="choix-prix"></span>
                         </label>
                         <label class="choix-card">
                             <input type="radio" name="produit" value="Rouge à lèvres">
-                            <span class="choix-name">Rouge à lèvres</span>
-                            <span class="choix-prix">120,00 DH</span>
+                            <span class="choix-name"></span>
+                            <span class="choix-prix"></span>
                         </label>
                     </div>
-
                 </div>
                 <div class="option-section">
                     <div class="option-heading">
@@ -87,34 +87,34 @@
                         <label class="teint-card">
                             <input type="radio" name="teint" value="01">
                             <span class="swatch nude"></span>
-                            <span>01</span>
+                            <span></span>
                         </label>
                         <label class="teint-card">
                             <input type="radio" name="teint" value="02">
                             <span class="swatch rosewood"></span>
-                            <span>02</span>
+                            <span></span>
                         </label>
                         <label class="teint-card">
                             <input type="radio" name="teint" value="03">
                             <span class="swatch cacao"></span>
-                            <span>03</span>
+                            <span></span>
                         </label>
                         <label class="teint-card">
                             <input type="radio" name="teint" value="04">
                             <span class="swatch prune"></span>
-                            <span>04</span>
+                            <span></span>
 
                         </label>
                         <label class="teint-card">
                             <input type="radio" name="teint" value="05">
                             <span class="swatch rouge"></span>
-                            <span>05</span>
+                            <span></span>
 
                         </label>
                         <label class="teint-card">
                             <input type="radio" name="teint" value="06">
                             <span class="swatch terracotta"></span>
-                            <span>06</span>
+                            <span></span>
 
                         </label>
 
@@ -132,15 +132,15 @@
                             <label class="option-fini">
                                 <input type="radio" name="finition" value="Mat">
                                 <span class="content-fini">
-                                <strong>Mat</strong>
-                                <small>Velouté · Inclus</small>
+                                <strong></strong>
+                                <small></small>
                             </span>
                             </label>
                             <label class="option-fini">
                                 <input type="radio" name="finition" value="Brillant">
                                 <span class="content-fini">
-                                <strong>Brillant</strong>
-                                <small>Lumineux · + 15 DH</small>
+                                <strong></strong>
+                                <small></small>
                                </span>
                             </label>
                     </div>
@@ -150,8 +150,7 @@
                     </p>
                 </div>
             
-
-            </section>
+            </form>
             
 
         </main>
@@ -162,8 +161,125 @@
                 </div>
                 <strong>00,00 DH</strong>
 
-                <button type="button">Ajouter au panier →</button>
+                <button type="button" >Ajouter au panier →</button>
+        </div>
+
+        
+    <main class="recap-page hidden">
+
+        <div class="recap-steps">
+            <span>01 Personnaliser</span>
+            <span>02 Récapitulatif</span>
+        </div>
+
+        <div class="recap-intro">
+            <p class="small-title">VOTRE SIGNATURE PERSONNALISÉE</p>
+
+            <h1>
+                Une signature beauté,<br>
+                qui ne ressemble qu'à vous.
+            </h1>
+        </div>
+
+        <div class="recap-layout">
+
+            <section class="recap-preview">
+
+                <div class="recap-image">
+
+                    <img src="assets/image/Aperçu produit en direct.png" alt="">
+
                 </div>
+
+                <div class="recap-product-info">
+
+                    <div>
+                        <h2 id="recap-nom">Le rouge signature</h2>
+
+                        <p id="recap-description">
+                            02 Rosewood · Fini Mat
+                        </p>
+                    </div>
+
+                    <a href="index.html">Modifier</a>
+
+                </div>
+
+            </section>
+
+            <section class="recap-card">
+
+                <p class="recap-badge">
+                    ✓ Sélection ajoutée
+                </p>
+
+                <h2>Votre récapitulatif</h2>
+
+                <p class="recap-subtitle">
+                    Voici les détails de votre création.
+                </p>
+
+                <div class="recap-ligne">
+
+                    <span id="recap-produit">
+                        Rouge à lèvres
+                    </span>
+
+                    <strong id="recap-prix-produit">
+                        120,00 DH
+                    </strong>
+
+                </div>
+
+                <div class="recap-ligne">
+
+                    <span id="recap-teint">
+                        Teinte · 02 Rosewood
+                    </span>
+
+                    <strong>Inclus</strong>
+
+                </div>
+
+                <div class="recap-ligne">
+
+                    <span id="recap-finition">
+                        Fini · Mat
+                    </span>
+
+                    <strong id="recap-prix-fini">
+                        Inclus
+                    </strong>
+
+                </div>
+
+                <div class="recap-total">
+
+                    <strong>Total</strong>
+
+                    <strong id="recap-prix">
+                        120,00 DH
+                    </strong>
+
+                </div>
+
+                <p class="recap-mention">
+                    Prix de cette sélection · aucun paiement effectué.
+                </p>
+
+                <a href="index.html" class="recap-button">
+                    Créer un autre produit →
+                </a>
+
+                <p class="recap-note">
+                    ✓ Votre sélection est enregistrée dans ce navigateur.
+                </p>
+
+            </section>
+
+        </div>
+
+    </main>
 
         <footer id="philosophie">
         <span>NUANCE — L’essentiel, c’est vous.</span>
