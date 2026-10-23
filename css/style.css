@@ -725,3 +725,6 @@ footer span:last-child {
     text-align: right;
 }
  
+.hidden {
+    display: none !important;
+}
