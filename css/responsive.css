@@ -1,0 +1,18 @@
+@media screen and (max-width: 768px) {
+
+    
+    .configurateur {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 16px 5%;
+    }
+
+    
+    .product-choix {
+        display: grid;
+        grid-template-columns: repeat(2,  1fr);
+        gap: 10px;
+    }
+
+}
